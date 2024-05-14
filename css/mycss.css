@@ -1,0 +1,1220 @@
+/* proses navbar */
+nav {
+  background-color: #3b5998;
+  height: 3rem;
+  font-size: 14px;
+}
+
+header {
+  height: 3rem;
+}
+
+nav .container {
+  height: 48px;
+}
+
+.navbar-item {
+  color: (255, 255, 255, 0.7);
+}
+
+.navbar-toggler {
+  order: -1;
+}
+
+#pencarian {
+  background-color: #2d4578;
+}
+
+.input-box {
+  position: relative;
+  height: 28px;
+  right: 1, 8rem;
+  max-width: 200px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.input-box input {
+  position: relative;
+  height: 100%;
+  padding: 0 15px;
+  outline: none;
+  border: none;
+  border-left: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  color: #333;
+}
+
+.input-box .search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 25px;
+  background-color: #2d4578;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"] {
+  font-size: 13px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #ece6e6;
+}
+
+::placeholder {
+  color: #ece6e6;
+  opacity: 1;
+}
+
+.search {
+  color: gray;
+}
+
+#toggler-theme {
+  transform: rotate(180deg);
+}
+
+/* proses pengerjaan plihan editor dan trending this week cara 1 */
+
+/* #box-luar .row {
+  border: solid 1px;
+  margin-top: 5rem;
+}
+
+#box-luar .col {
+  border: solid 1px;
+}
+
+#box-luar {
+  border: solid 1px;
+  position: relative;
+}
+
+main .row {
+  height: 2rem;
+  margin-top: 0; 
+  padding-top: 0; 
+}
+
+#IsiBox1 {
+  position: relative;
+  height: 16rem;
+  top: -9.5rem;
+}
+
+#judulBox1 {
+  position: relative;
+  top: -5rem;
+}
+
+#judulBox2 {
+  position: relative;
+  top: -12.5rem;
+}
+
+#IsiBox2 {
+  position: relative;
+  height: 17rem;
+  top: -16.8rem;
+} */
+
+main {
+  margin-top: 70px;
+  height: 246rem;
+}
+
+/* proses pengerjaan plihan editor dan trending this week cara 2 */
+main .container {
+  display: inline-flex;
+  margin-left: 5%;
+  height: 20rem;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+main .flex-direction {
+  flex-direction: row;
+}
+
+#isiPilihan {
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: black;
+}
+
+/* #pilEditor {
+  position: relative;
+  bottom: 20px;
+} */
+
+main .div1 {
+  width: 50%;
+  height: 20rem;
+}
+
+main .div2 {
+  /* background-color: rgb(113, 113, 228); */
+  width: 50%;
+  height: 20rem;
+}
+
+main span {
+  font-size: 16px;
+  margin-bottom: 3px;
+  margin-left: 0rem;
+  font-weight: bold;
+  display: block;
+  line-height: 12px;
+  text-align: left;
+}
+
+#trendingweek span {
+  margin-bottom: 10px;
+}
+
+.div2 #isitrending .col-3 {
+  /* border: 1px solid black; */
+  height: 9.5rem;
+}
+.div2 #isitrending .col-9 {
+  /* border: 1px solid black; */
+  height: 9.5rem;
+}
+
+.div2 #isi-box1-trending .col-3 .container {
+  padding-top: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.div2 #isi-box1-trending .col-3 .container img {
+  height: 90%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.div2 #isi-box2-trending .col-3 .container {
+  padding-top: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.div2 #isi-box2-trending .col-3 .container img {
+  height: 90%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#isitrending p {
+  font-size: 13px;
+  color: #777;
+  line-height: 18px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#isitrending .deskripsi-1 {
+  position: relative;
+  bottom: -20px;
+}
+
+#isitrending .deskripsi-1 span {
+  position: relative;
+  bottom: 10px;
+}
+
+#isitrending .tombol {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#isitrending .button {
+  border-radius: 10px;
+  font-size: small;
+  background-color: #ddd;
+  border: 1px solid white;
+}
+
+#but {
+  border-radius: 10px;
+  font-size: small;
+  background-color: #3b5998;
+  color: white;
+  border: 1px solid white;
+}
+
+#isitrending .contain1 {
+  border: #ece6e6 solid 1px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#isitrending .contain2 {
+  margin-left: 10px;
+  border: #ece6e6 solid 1px;
+  border-radius: 10px;
+}
+
+.container flex-direction {
+  background-color: #b8c2cc;
+}
+
+/* bagian pilihan editor */
+
+#isiPilihan {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  height: auto;
+  /* width: fit-content; */
+  width: 100%;
+}
+
+#carousel-slides .carousel-inner .keterangan {
+  /* border: 1px solid black; */
+  height: 18rem;
+  position: relative;
+  text-align: left;
+  color: white;
+  margin-left: -10px;
+  padding-top: 5%;
+}
+
+#carousel-slides .carousel-inner .keterangan button {
+  padding-top: 0px;
+}
+
+.konten {
+  border-radius: 5px;
+  /* background-color: #333; */
+  /* border: solid 1px black; */
+}
+
+#item1,
+#item2,
+#item3,
+#item4,
+#item5 img {
+  height: 17.9rem;
+  border-radius: 10px;
+}
+
+#item1,
+#item2,
+#item3,
+#item4,
+#item5 .konten .row .col-8 span {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 12px;
+  text-align: left;
+}
+
+#item1,
+#item2,
+#item3,
+#item4,
+#item5 .konten .row .col-8 h4 {
+  margin-bottom: 5px;
+}
+
+#item1,
+#item2,
+#item3,
+#item4,
+#item5 .konten .row .col-8 p {
+  margin: 0px;
+}
+
+.div1 #isiPilihan button {
+  color: #fffcfc;
+  background-color: #b8c2cc;
+  border-radius: 5px;
+  height: 1.7rem;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+/* proses 5 novel populer today */
+#novel-populer {
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  /* border: 1px solid black; */
+  height: 19.5rem;
+}
+
+#isi-box {
+  margin-top: 0px;
+  margin-left: 1px;
+  width: 100%;
+  height: 16.5rem;
+  /* border: 1px solid black; */
+}
+
+#novel-populer .judul-box {
+  /* border: 1px black solid; */
+  height: 2.5rem;
+  padding-left: 15px;
+  width: 100%;
+  font-size: 20px;
+  display: block;
+}
+
+main #novel-populer .row .col-2 .container1 img {
+  border-radius: 5px;
+  width: 90%;
+}
+
+#novel-populer .col-2 .container2 h6 {
+  /* cara untuk teks yang kepanjangan */
+  font-size: 14px;
+  overflow: hidden;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#novel-populer .col-2 .container2 p {
+  font-size: 12px;
+  margin-top: -10px;
+  position: absolute;
+}
+
+#novel-populer .col-2 .container2 .score {
+  position: relative;
+  width: max-content;
+  margin-top: -10px;
+  margin-left: 100px;
+}
+
+#novel-populer .col-2 .container2 .score .nilai {
+  background-color: #fff;
+  position: relative;
+  color: #2d4578;
+  border: 1px solid #3b5998;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-bottom: 1px;
+  bottom: 20px;
+}
+#novel-populer .col-2 .container2 .score .keterangan {
+  background-color: #2d4578;
+  position: relative;
+  color: #fff;
+  border: 1px solid #3b5998;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 2px;
+  bottom: 46px;
+}
+
+/* Proses pengerjaan section */
+section {
+  /* border: 1px solid black; */
+  height: 200rem;
+  width: 70%;
+  margin-top: 3rem;
+  float: left;
+  padding: 10px;
+}
+
+section .container {
+  /* border: 1px solid black; */
+  width: 95%;
+}
+
+.container-instalapp {
+  border: 1px solid #b8c2cc;
+  padding: 15px;
+  height: 7.5rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.container .container-instalapp .row .col-10 button {
+  font-size: 12px;
+  width: 5rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #3b5998;
+}
+
+.container .container-instalapp .row .col-2 {
+  width: 10%;
+}
+
+.container .container-instalapp .row .col-2 img {
+  width: 70px;
+  height: 70px;
+}
+
+.container .container-instalapp .row {
+  /* border: 1px solid black; */
+  height: 5.5rem;
+}
+
+#kotakberwarna {
+  background-color: #3b5998;
+  height: 7.5rem;
+  width: 0px;
+  position: relative;
+  left: 33px;
+  bottom: 16px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#keterangan-situs {
+  height: 10rem;
+}
+
+#keterangan-situs p {
+  font-size: 14px;
+}
+
+#keterangan-situs p,
+h5 {
+  color: #777;
+}
+
+#kotak-updatenovel {
+  height: 150rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#kotak-updatenovel .judulupdate {
+  height: fit-content;
+  background-color: #3b5998;
+  width: 100%;
+  color: #fff;
+  padding: 3px;
+  padding-left: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#kotak-updatenovel .judulupdate button {
+  font-size: 8px;
+  border-radius: 5px;
+  height: 20px;
+  border: solid 1px #3b5998;
+  background-color: white;
+  position: relative;
+  top: 1.5px;
+  right: 1.5px;
+  padding: auto;
+  float: right;
+}
+
+#kotak-updatenovel .child {
+  width: 100%;
+  height: 147rem;
+  border: 1px solid #ece6e6;
+}
+
+#kotak-updatenovel .child .row .col-6 .row .col-4 .kotakgambar img {
+  /* border: 1px solid palegreen; */
+  height: 10rem;
+  margin: 10px;
+}
+
+#kotak-updatenovel .child .row .col-6 .row .col-8 {
+  padding-top: 3%;
+}
+
+#kotak-updatenovel .child .row .col-6 .row .col-8 button {
+  width: fit-content;
+  height: 1.3rem;
+  border-radius: 20px;
+  background-color: #f4f6fa;
+  border: 1px solid white;
+  font-size: 10px;
+  float: left;
+}
+
+/* #kotak-updatenovel .child .row .col-6 .row .col-8 a {
+  width: 3rem;
+  height: 1.3rem;
+  border-radius: 20px;
+  background-color: #f4f6fa;
+  text-align: center;
+  border: 1px solid white;
+  font-size: 10px;
+  float: left;
+  color: black;
+  text-decoration: none;
+} */
+
+#kotak-updatenovel .child .row .col-6 .row .col-8 a:hover {
+  text-decoration: none;
+  color: #4587c9;
+}
+
+#kotak-updatenovel .child .row .col-6 .row .col-8 p {
+  margin-left: 70%;
+  font-style: italic;
+  font-size: 12px;
+}
+
+#kotak-updatenovel .child .row .col-6 {
+  border-bottom: 1px solid #ece6e6;
+  height: 12rem;
+}
+
+.tombol-button-nextpage {
+  position: relative;
+  display: flex;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#next-page {
+  border-radius: 5px;
+  background-color: #3b5998;
+  border: 1px solid white;
+  color: #fff;
+  width: 7rem;
+}
+
+/* proses rekomendasi novel */
+#kotak-rekomendasi {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ece6e6;
+}
+
+#judul-rekomendasi {
+  /* border: 1px solid black; */
+  height: max-content;
+  width: 100%;
+}
+
+#isi-rekomendasi {
+  /* border: 1px solid plum; */
+  height: 21rem;
+}
+
+#isi-rekomendasi .row {
+  /* border: 1px solid black; */
+  height: fit-content;
+}
+
+#isi-rekomendasi .row .col button {
+  font-size: 14px;
+  width: 8rem;
+  height: 1.7rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #f7f7f7;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#isi-rekomendasi .row .col .rek-button:hover {
+  color: #3b5998;
+}
+
+#isi-rekomendasi .row .col .active {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+#tagline {
+  background-color: #f7f7f7;
+}
+
+#isi-rekomendasi .tampilanrekomendasi {
+  display: block;
+  height: 90%;
+  /* border: 1px solid brown; */
+}
+
+#isi-rekomendasi .tampilanrekomendasi .col {
+  /* border: 1px solid greenyellow; */
+  height: 19rem;
+}
+
+#isi-rekomendasi .tampilanrekomendasi .col .container2 {
+  /* border: 1px solid black; */
+  height: auto;
+}
+#isi-rekomendasi .tampilanrekomendasi .col .container2 p {
+  font-size: 13px;
+  margin: 0;
+}
+
+#isi-rekomendasi .tampilanrekomendasi .col .container2 h6 {
+  font-size: 13px;
+  margin: 0;
+  overflow: hidden;
+  line-height: 30px;
+  width: 135px;
+  height: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#isi-rekomendasi .tampilanrekomendasi img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#isi-rekomendasi .nontampilanrekomendasi {
+  display: none;
+}
+
+.checked {
+  /* warna bintang */
+  color: orange;
+}
+
+/* Proses pengerjaan article */
+article {
+  /* border: 1px solid black; */
+  /* border-left: none; */
+  margin-top: 3rem;
+  height: 200rem;
+  width: 30%;
+  float: left;
+  /* background-color: #777; */
+  padding: 10px;
+}
+
+article .container {
+  margin: auto;
+}
+
+#tl-info {
+  border: 1px solid #b8c2cc;
+  background-color: white;
+  height: 11rem;
+  width: 90%;
+}
+#tl-info .isi {
+  border-bottom: 1px solid #b8c2cc;
+  height: 30px;
+  width: 100%;
+}
+#tl-info p {
+  margin: 0;
+  font-size: 16px;
+}
+
+#search-box {
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  height: 10rem;
+  width: 90%;
+}
+#search-box .tempatdropdown1,
+.tempatdropdown2,
+.tempatdropdown3,
+.tempatdropdown4 {
+  position: relative;
+  width: 140px;
+  /* border: 1px solid black; */
+  bottom: 20px;
+}
+#search-box .dropdown {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: fit-content;
+}
+#search-box .dropdown a {
+  width: 8.2rem;
+  height: 1.8rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-box .kotak-pencarian {
+  width: 100%;
+}
+
+#search-box .kotak-pencarian h6,
+hr {
+  margin-top: 5px;
+}
+
+#search-box .checkbox-inline {
+  font-size: 10px;
+  margin-right: 3rem;
+}
+
+#search-box tr td {
+  /* border: 1px solid black; */
+  position: relative;
+  text-align: left;
+}
+#search-box .form-check-input {
+  width: 15px;
+  height: 15px;
+  /* margin-right: 15px; */
+}
+
+article #search-konten {
+  width: fit-content;
+  height: fit-content;
+  /* border: 1px solid black; */
+  position: relative;
+  bottom: 20px;
+}
+article #search-konten button {
+  width: 18rem;
+  color: white;
+  background-color: #3b5998;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+/* proses rekomendasi mingguan, bulanan, semua */
+#bacanovelpopuler-mbs {
+  border: 1px solid #b8c2cc;
+  width: 90%;
+  height: 75rem;
+  margin-top: 15px;
+}
+#rekomendasi-mbs {
+  /* border: 1px solid black; */
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+}
+
+#isi-rekomendasi-mbs .row .col .mbs-button:hover {
+  color: #3b5998;
+}
+
+#isi-rekomendasi-mbs .row .col .active {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+#tagline-mbs {
+  background-color: #f7f7f7;
+}
+#isi-rekomendasi-mbs .row .col button {
+  font-size: 14px;
+  width: 5rem;
+  height: 1.7rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #f7f7f7;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.nontampilanrekomendasi-mbs {
+  display: none;
+}
+#rekomendasi-mbs .tampilanrekomendasi-mbs .row {
+  /* border: 1px solid olive; */
+  margin-top: 5px;
+}
+
+#rekomendasi-mbs .tampilanrekomendasi-mbs .col {
+  /* border: 1px solid greenyellow; */
+  height: 19rem;
+}
+#rekomendasi-mbs .tampilanrekomendasi-mbs .col-8 .container2 {
+  /* border: 1px solid black; */
+  height: auto;
+}
+#rekomendasi-mbs .tampilanrekomendasi-mbs .col-8 .container2 p {
+  font-size: 12px;
+  margin: 0;
+}
+
+#rekomendasi-mbs .tampilanrekomendasi-mbs .col-8 .container2 h6 {
+  font-size: 13px;
+  margin: 0;
+  overflow: hidden;
+  line-height: 30px;
+  width: 135px;
+  height: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#rekomendasi-mbs .tampilanrekomendasi-mbs img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#rekomendasi-mbs .tampilanrekomendasi-mbs .col-1 .nomor {
+  border: 1.3px solid #4587c9;
+  border-radius: 5px;
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 12px;
+  position: relative;
+  margin-top: 30px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4587c9;
+}
+
+/* proses macam macam genre */
+#genres-novelonline {
+  border: 1px solid #b8c2cc;
+  margin-top: 30px;
+  height: fit-content;
+  width: 90%;
+}
+#judul-genre {
+  width: 100%;
+  margin-left: auto;
+}
+
+.isi-genre .row .col {
+  border-top: 1px solid #b8c2cc;
+  border-right: 1px solid #b8c2cc;
+  border-bottom: none;
+  height: max-content;
+}
+#colakhir {
+  border-right: none;
+}
+.isi-genre .row .col a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+.isi-genre .row .col a:hover {
+  color: #3b5998;
+}
+
+/* proses box novel serial terbaru */
+#novel-serialterbaru {
+  border: 1px solid #b8c2cc;
+  margin-top: 30px;
+  height: fit-content;
+  width: 90%;
+}
+
+#novel-serialterbaru .container-isi .row {
+  border: 1px solid #b8c2cc;
+  height: fit-content;
+}
+
+#novel-serialterbaru .container-isi .row .col-3 img {
+  width: 100%;
+  height: 80%;
+  margin-top: 10px;
+}
+#novel-serialterbaru .container-isi span {
+  position: relative;
+  bottom: 10px;
+  font-size: small;
+  color: #b8c2cc;
+  margin-bottom: 10px;
+}
+#novel-serialterbaru .container-isi .row .col-9 a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+}
+#novel-serialterbaru .container-isi .row .col-9 p {
+  font-size: 13px;
+}
+
+/* proses box terakhir baca */
+#terakhirbaca {
+  border: 1px solid #b8c2cc;
+  margin-top: 30px;
+  height: fit-content;
+  width: 90%;
+}
+#terakhirbaca .row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #b8c2cc;
+}
+
+#terakhirbaca a {
+  color: #333;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Fira Sans", sans-serif;
+}
+#terakhirbaca a:hover {
+  color: #3b5998;
+}
+
+/* bagian footer */
+footer {
+  color: white;
+  height: 12rem;
+  background-color: #222;
+}
+
+footer .wadah {
+  justify-content: center;
+  text-align: center;
+}
+
+footer .wadah a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .wadah .navigasi {
+  background-color: #3b5998;
+  padding: 5px;
+}
+
+footer .wadah .keteranganfooter {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+#f2 {
+  font-size: 13px;
+  margin-left: 2rem;
+}
+
+footer .wadah .container1 {
+  margin-top: 10px;
+}
+
+footer .wadah .container2 button {
+  color: white;
+  background-color: #3b5998;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+footer .wadah .container2 button:hover {
+  color: #4587c9;
+  background-color: #444;
+}
+
+/* media query */
+@media screen and (max-width: 812px) {
+  nav {
+    height: 4rem;
+    margin-top: -15px;
+  }
+
+  nav .container {
+    justify-content: center;
+    margin-bottom: -30px;
+    margin-top: -30px;
+    height: 4rem;
+    display: fixed;
+  }
+
+  main .flex-direction {
+    flex-direction: column;
+  }
+
+  main .container {
+    width: 100%;
+    height: auto;
+  }
+
+  .input-box {
+    max-width: 180px;
+  }
+
+  main .div1 {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    /* border-bottom: 1px solid black; */
+  }
+
+  main .div2 {
+    width: 100%;
+    height: auto;
+  }
+
+  main .div2 span {
+    line-height: 17px;
+  }
+
+  #isiPilihan,
+  #isitrending {
+    height: auto;
+    width: 100%;
+  }
+
+  .carousel-slide {
+    width: 100%;
+    height: auto;
+  }
+
+  .konten {
+    height: auto;
+  }
+
+  #item1,
+  #item2,
+  #item3,
+  #item4,
+  #item5 img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  #isi-box .col-2 {
+    width: 50%;
+  }
+
+  #isi-box {
+    margin-top: -110%;
+  }
+
+  #novel-populer {
+    height: 75rem;
+  }
+
+  section,
+  article {
+    width: 100%;
+  }
+
+  main {
+    /* background-color: #333; */
+    height: 580rem;
+  }
+
+  #kotak-updatenovel .child .row .col-6 .row .col-8 .keterangan-bacanovel h6 {
+    font-size: 14px;
+    overflow: hidden;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  #kotak-updatenovel
+    .child
+    .row
+    .col-6
+    .row
+    .col-8
+    .keterangan-bacanovel
+    .isiLink
+    .chapter,
+  p {
+    overflow: hidden;
+    width: 50px;
+    height: 30px;
+    /* line-height: 30px; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  #kotak-updatenovel .child .row .col-6 {
+    flex-direction: column;
+  }
+
+  #install .col-10 {
+    position: relative;
+    font-size: 2px;
+    margin-left: 2rem;
+  }
+  #kotakberwarna {
+    display: none;
+  }
+
+  #install .row .col-2 {
+    width: 0.5rem;
+    height: auto;
+  }
+
+  #keterangan-situs {
+    margin-top: 1rem;
+    height: fit-content;
+  }
+
+  #kotak-updatenovel {
+    margin-top: 3rem;
+  }
+
+  #kotak-updatenovel .child img {
+    width: 100%;
+  }
+
+  #minimize1,
+  #minimize2 {
+    display: none;
+  }
+
+  #kotak-rekomendasi #isi-rekomendasi .row .col .rek-button {
+    width: fit-content;
+  }
+  #kotak-rekomendasi #tampilan-rekomendasi .row .col .container1 img {
+    max-width: 100%;
+    height: auto;
+  }
+  #kotak-rekomendasi #tampilan-rekomendasi .row .col .container2 {
+    width: fit-content;
+  }
+  #kotak-rekomendasi {
+    height: fit-content;
+    height: 82rem;
+  }
+
+  section {
+    /* border: 1px solid sandybrown; */
+    height: 258rem;
+  }
+
+  article {
+    /* border: 1px solid gold; */
+    height: 195rem;
+  }
+  footer {
+    /* border: 1px solid gold; */
+    height: auto;
+  }
+  #bacanovelpopuler-mbs {
+    height: auto;
+  }
+  #genres-novelonline {
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav {
+    height: 4rem;
+    margin-top: -15px;
+  }
+
+  nav .container {
+    justify-content: center;
+    margin-bottom: -30px;
+    margin-top: -30px;
+    height: 4rem;
+    display: fixed;
+  }
+}

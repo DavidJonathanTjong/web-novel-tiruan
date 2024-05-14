@@ -1,0 +1,3373 @@
+<!-- Nama: David Jonathan Tjong
+NIM : 2211016310007
+url: https://bacalightnovel.co/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bacalightnovel.co</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mycss.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body data-bs-theme="light">
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="container" style="background-color: #3b5998">
+          <a class="navbar-brand" href="index.html" id="imagelogo">
+            <img width="120px" src="images/ln-dark.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            onclick="sembunyikanFitur()"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ml-auto"
+            id="navbarNav"
+            style="background-color: #3b5998"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#daftarnovel">Daftar Novel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#noveltamat">Novel Tamat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#novelkorea">Novel Korea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#novelchina">Novel China</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#noveljepang">Novel Jepang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bookmark">Bookmark</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-check form-switch mx-4" id="toggler-theme">
+            <input
+              class="form-check-input p2"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchChecked"
+              checked
+              onclick="funcTheme()"
+            />
+          </div>
+
+          <div class="input-box" id="kotakpencarian">
+            <input type="text" placeholder="Search..." id="pencarian" />
+            <span class="search">
+              <i class="uil uil-search search-icon" class="search-icon"></i>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- percobaan dengan grid -->
+      <!-- <div class="container" id="box-luar">
+        <div class="row" id="judulBox1">
+          <div class="col">Pilihan Editor</div>
+          <div class="col">Trending this week</div>
+        </div>
+
+        <div class="row" id="IsiBox1">
+          <div class="col">box 1</div>
+          <div class="col">box 2</div>
+        </div>
+
+        <div class="row" id="judulBox2">
+          <div class="col">box judul</div>
+        </div>
+
+        <div class="row" id="IsiBox2">
+          <div class="col">box 1</div>
+          <div class="col">box 2</div>
+          <div class="col">box 3</div>
+          <div class="col">box 4</div>
+          <div class="col">box 5</div>
+        </div>
+      </div> -->
+
+      <div class="container flex-direction">
+        <div class="div1">
+          <div id="pilEditor">
+            <span>Piihan Editor</span>
+          </div>
+          <div id="isiPilihan">
+            <div
+              id="carousel-slides"
+              class="carousel-slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" id="item1">
+                  <div class="konten">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="images/Realms In The Firmament.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-8">
+                        <div class="keterangan">
+                          <h4>Realms In The Firmament</h4>
+                          <span>2014</span>
+                          <h6>SINOPSIS</h6>
+                          <p>Ye Xiao adalah seorang kultivator yang unggul</p>
+                          <p>Status: Ongoing</p>
+                          <p>Tipe: Novel</p>
+                          <button>Action</button>
+                          <button>Harem</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" id="item2">
+                  <div class="konten">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="images/God Emperor.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-8">
+                        <div class="keterangan">
+                          <h4>God Emperor</h4>
+                          <span>2015</span>
+                          <h6>SINOPSIS</h6>
+                          <p>Zhang Ruo Chen adalah pewaris laki-laki satu-</p>
+                          <p>Status: Ongoing</p>
+                          <p>Tipe: Novel</p>
+                          <button>Action</button>
+                          <button>Adventure</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" id="item3">
+                  <div class="konten">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="images/Overlord (LN).jpeg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-8">
+                        <div class="keterangan">
+                          <h4>Overlord (LN)</h4>
+                          <span>2010</span>
+                          <h6>SINOPSIS</h6>
+                          <p>Pada abad ke-21, dunia memasuki tahap baru</p>
+                          <p>Status: Ongoing</p>
+                          <p>Tipe: Novel</p>
+                          <button>Action</button>
+                          <button>Adventure</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" id="item4">
+                  <div class="konten">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="images/Ancient Strengthening Technique.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-8">
+                        <div class="keterangan">
+                          <h4>Ancient Strengthening Technique</h4>
+                          <span>2012</span>
+                          <h6>SINOPSIS</h6>
+                          <p>
+                            Seorang prajurit manusia yang mengolah Teknik
+                            Penguatan Kuno telah melampaui dimensi
+                          </p>
+                          <p>Status: Completed</p>
+                          <p>Tipe: Novel</p>
+                          <button>Adventure</button>
+                          <button>Drama</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" id="item5">
+                  <div class="konten">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="images/Martial World.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-8">
+                        <div class="keterangan">
+                          <h4>Martial World</h4>
+                          <span>2012</span>
+                          <h6>SINOPSIS</h6>
+                          <p>Di alam dewa, legenda yang tak terhitung</p>
+                          <p>Status: Completed</p>
+                          <p>Tipe: Novel</p>
+                          <button>Action</button>
+                          <button>Adventure</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="div2">
+          <div id="trendingweek">
+            <span>Trending This Week</span>
+          </div>
+          <div id="isitrending">
+            <div class="contain1">
+              <div class="row" id="isi-box1-trending">
+                <div class="col-3">
+                  <div class="container">
+                    <a href="#">
+                      <img src="images/Overgeared.jpg" alt="foto-trend1" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="deskripsi-1">
+                    <span>Overgeared</span>
+                    <p>
+                      Karena Shin Youngwoo memiliki kehidupan yang tidak
+                      menguntungkan dan sekarang terjebak membawa batu bata di
+                      lokasi...
+                    </p>
+                  </div>
+                  <div class="tombol">
+                    <button id="but">Novel</button>
+                    <button class="button">Action</button>
+                    <button class="button">Adventure</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contain2">
+              <div class="row" id="isi-box2-trending">
+                <div class="col-3">
+                  <div class="container">
+                    <a href="#">
+                      <img
+                        src="images/Return of Mount Hua Sect.jpeg"
+                        alt="foto-trend2"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="deskripsi-1">
+                    <span>Overgeared</span>
+                    <p>
+                      Murid ke-13 dari Sekte Gunung Besar Hua. Salah satu
+                      Pendekar Pedang Generasi Ketiga Terhebat. Master Pedang
+                      Bunga Plum,
+                    </p>
+                  </div>
+                  <div class="tombol">
+                    <button id="but">Novel</button>
+                    <button class="button">Action</button>
+                    <button class="button">Adventure</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bagian 5 novel terpopuler today -->
+      <div class="container" id="novel-populer">
+        <div class="judul-box"><b>Baca Novel Terpopuler Hari Ini</b></div>
+        <div class="row" id="isi-box">
+          <div class="col-2">
+            <div class="container1">
+              <img src="images/Swordmaster's Youngest Son.jpg" />
+            </div>
+            <div class="container2">
+              <h6>Swordmaster's Youngest Son</h6>
+              <p>Action, Adventure</p>
+              <div class="score">
+                <span class="nilai">8.2</span><br />
+                <span class="keterangan">Score</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="container1">
+              <img src="images/Leveling with the Gods.jpeg" />
+            </div>
+            <div class="container2">
+              <h6>Leveling with the Gods</h6>
+              <p>Action, Adventure</p>
+              <div class="score">
+                <span class="nilai">8.7</span><br />
+                <span class="keterangan">Score</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="container1">
+              <img src="images/Overgeared.jpg" />
+            </div>
+            <div class="container2">
+              <h6>Overgeared</h6>
+              <p>Action, Adventure</p>
+              <div class="score">
+                <span class="nilai">9.0</span><br />
+                <span class="keterangan">Score</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="container1">
+              <img src="images/Trash of the Count's Family.jpg" />
+            </div>
+            <div class="container2">
+              <h6>Trash of the Count's Family</h6>
+              <p>Action, Adventure</p>
+              <div class="score">
+                <span class="nilai">8.8</span><br />
+                <span class="keterangan">Score</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="container1">
+              <img src="images/Return of Mount Hua Sect.jpeg" />
+            </div>
+            <div class="container2">
+              <h6>Return of Mount Hua Sect</h6>
+              <p>Action, Adventure</p>
+              <div class="score">
+                <span class="nilai">8.0</span><br />
+                <span class="keterangan">Score</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="container1">
+              <img src="images/Alchemy Emperor of the Divine Dao.jpg" />
+            </div>
+            <div class="container2">
+              <h6>Alchemy Emperor of the Divine Dao</h6>
+              <p>Action, Fantasy</p>
+              <div class="score">
+                <span class="nilai">8.7</span><br />
+                <span class="keterangan">Score</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="container">
+          <!-- proses instal app -->
+          <div class="container-instalapp" id="install">
+            <div class="row">
+              <div class="col-2">
+                <img src="images/fav.png" alt="logo-app" />
+              </div>
+              <div class="col-10">
+                <h6><b>Ayo Install Aplikasi BacaLightNovel</b></h6>
+                <h6>
+                  Install aplikasi Bacalightnovel tanpa ribet dan tanpa makan
+                  storage!
+                </h6>
+                <button id="instalasiApp" onclick="instalApp()">
+                  Install App
+                </button>
+              </div>
+              <div id="kotakberwarna"></div>
+            </div>
+          </div>
+
+          <!-- proses keterangan -->
+          <div class="container-instalapp" id="keterangan-situs">
+            <h5>BacaLightNovel - Baca Novel Ringan</h5>
+            <hr />
+            <p>
+              BacaLightNovel merupakan situs<b> baca novel ringan</b> bahasa
+              indonesia terlengkap. Tampilan web juga sangat nyaman dengan warna
+              yang enak dilihat dan tentu juga iklan yang tidak mengganggu para
+              pembaca. Kamu bisa <b>Baca Novel</b> terbaru, Korea, China dan
+              Jepang online gratis hanya di bacalightnovel.
+            </p>
+          </div>
+        </div>
+
+        <!-- proses baca ligth novel terbaru online -->
+        <div class="container" id="kotak-updatenovel">
+          <div class="judulupdate">
+            <b>Baca Novel Terbaru Online</b>
+            <button id="view-all-novel"><b>LIHAT SEMUA</b></button>
+          </div>
+          <div class="child">
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/The Youngest Son of Sunyang.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>The Youngest Son of Sunyang</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 127</button>
+                        <p>4 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 126</button>
+                        <p>4 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 125</button>
+                        <p>4 hari lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Everlasting Dragon Emperor.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Everlasting Dragon Emperor</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 678</button>
+                        <p>5 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 677</button>
+                        <p>5 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 676</button>
+                        <p>5 hari lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Swordmaster's Youngest Son.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Swordmaster's Youngest Son</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 467</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 466</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 465</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img src="images/Leveling with the Gods.jpeg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Leveling with the Gods</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 473</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 472</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 471</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img src="images/Overgeared.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Overgeared</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 2024</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 2023</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 2022</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Ex Rank Supporting Role's Replay in a Prestigious School.jpeg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6>
+                        <b
+                          >Ex Rank Supporting Role's Replay in a Prestigious
+                          School</b
+                        >
+                      </h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 812</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 811</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 810</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Trash of the Count's Family.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Trash of the Count's Family</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. Part2 - 177</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. Part2 - 176</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. Part2 - 175</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Count's Youngest Son is a Warlock.jpeg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Count's Youngest Son is a Warlock</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 169</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 168</button>
+                        <p>6 hari lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 167</button>
+                        <p>3 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img src="images/Subdued Soul Chronicle.jpeg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Subdued Soul Chronicle</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 213</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 212</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 211</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img src="images/Genius Warlock.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Genius Warlock</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 432</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 431</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 430</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Return of Mount Hua Sect.jpeg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Return of Mount Hua Sect</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 642</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 641</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 640</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img src="images/Drug-Eating Genius Mage.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Drug-Eating Genius Mage</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 261</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 260</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 259</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Solo Farming In The Tower.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Solo Farming In The Tower</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 330</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 329</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 328</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Childhood Friend of the Zenith.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Childhood Friend of the Zenith</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 208</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 207</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 206</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/I Killed the Player of the Academy.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>I Killed the Player of the Academy</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 176</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 175</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 174</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Heavenly Demon Cultivation Simulation.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Heavenly Demon Cultivation Simulation</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 401 - Part 1 END</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 400</button>
+                        <p>1 bulan lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 399</button>
+                        <p>1 bulan lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/This Bastard is Too Competent.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>This Bastard is Too Competent</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 142</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 141</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 140</button>
+                        <p>3 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Civil Servant in Romance Fantasy.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Civil Servant in Romance Fantasy</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 156</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 155</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 154</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img src="images/Pick Me Up!.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Pick Me Up!</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 157</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 156</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 155</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/The Return of the Iron-blood Sword Hound.jpeg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>The Return of the Iron-blood Sword Houn</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 500 - SS 5 - END</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 499 - SS 4</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 498 - SS 3</button>
+                        <p>3 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/The Academy's Only Monster Summoner [RAW].webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>The Academy's Only Monster Summoner [RAW]</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 113</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 112</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 111</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/The Reincarnate Became a Professor at the Academy [RAW].jpeg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6>
+                        <b
+                          >The Reincarnate Became a Professor at the Academy
+                          [RAW]</b
+                        >
+                      </h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 51</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 50</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 49</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- pengisian box -->
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/Became an Evolving Space Monster.webp"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>Became an Evolving Space Monster</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 175</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 174</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 173</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="kotakgambar">
+                      <a href="#">
+                        <img
+                          src="images/I Became the Academy's Kibitz Villain.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="keterangan-bacanovel">
+                      <h6><b>I Became the Academy's Kibitz Villain</b></h6>
+                      <div class="isiLink">
+                        <!-- jika dilanjutkan sampai habis nanti ubah ini ke <a> -->
+                        <!-- <a href="#">Ch. 127</a> -->
+                        <button class="chapter">Ch. 198</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 197</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                      <div class="isiLink">
+                        <button class="chapter">Ch. 196</button>
+                        <p>1 minggu lalu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tombol-button-nextpage">
+              <button id="next-page">Next ></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="kotak-rekomendasi">
+          <div id="judul-rekomendasi">
+            <b>Rekomendasi Novel</b>
+            <hr />
+          </div>
+          <div class="container-rekomen" id="isi-rekomendasi">
+            <div class="row" id="tagline">
+              <div class="col">
+                <button
+                  class="rek-button active"
+                  onclick="ubahTampilan(this, 'rekomen-genre1')"
+                >
+                  Action
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  class="rek-button"
+                  onclick="ubahTampilan(this, 'rekomen-genre2')"
+                >
+                  Ecchi
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  class="rek-button"
+                  onclick="ubahTampilan(this, 'rekomen-genre3')"
+                >
+                  Fantasy
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  id="minimize1"
+                  class="rek-button"
+                  onclick="ubahTampilan(this, 'rekomen-genre4')"
+                >
+                  Josei
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  id="minimize2"
+                  class="rek-button"
+                  onclick="ubahTampilan(this, 'rekomen-genre5')"
+                >
+                  Shounen
+                </button>
+              </div>
+            </div>
+            <div class="tampilanrekomendasi" id="rekomen-genre1">
+              <div class="row">
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Alchemy Emperor of the Divine Dao.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Alchemy Emperor of the Divine Dao</h6>
+                    <a href="#"><p>Ch. 3491</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Outside of Time.jpeg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Outside of Time</h6>
+                    <a href="#"><p>Ch. 1235</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/The Tyrant Empress is Obsessed with Me [RAW].jpg"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>The Tyrant Empress is Obsessed with Me [RAW]</h6>
+                    <a href="#"><p>Ch. 100</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/Cultivating in Secret Beside a Demoness.webp"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>Cultivating in Secret Beside a Demoness</h6>
+                    <a href="#"><p>Ch. 788</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/I Became a Foreigner Loved by Transcendentalists [RAW].jpg"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>
+                      I Became a Foreigner Loved by Transcendentalists [RAW]
+                    </h6>
+                    <a href="#"><p>Ch. 135</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nontampilanrekomendasi" id="rekomen-genre2">
+              <div class="row">
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Super Random System.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Super Random System</h6>
+                    <a href="#"><p>Ch. 66</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Against the Gods.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Against the Gods</h6>
+                    <a href="#"><p>Ch. 2027</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star -half-full checked"></span>8.9
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Ancient Strengthening Technique.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Ancient Strengthening Technique</h6>
+                    <a href="#"><p>Ch. 2492 - END</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.3
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/Ankoku Kishi Monogatari ~Yuusha wo Taosu Tameni Maou ni Shoukansaremashita~.jpg"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>
+                      Ankoku Kishi Monogatari ~Yuusha wo Taosu Tameni Maou ni
+                      Shoukansaremashita~
+                    </h6>
+                    <a href="#"><p>Ch. 118.1</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Castle of Black Iron.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Castle of Black Iron</h6>
+                    <a href="#"><p>Ch. 2015</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nontampilanrekomendasi" id="rekomen-genre3">
+              <div class="row">
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Alchemy Emperor of the Divine Dao.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Alchemy Emperor of the Divine Dao</h6>
+                    <a href="#"><p>Ch. 3491</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/The Grand Duchess Is Defeated Again Today [RAW].jpg"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>The Grand Duchess Is Defeated Again Today [RAW]</h6>
+                    <a href="#"><p>Ch. 116</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/The Tyrant Empress is Obsessed with Me [RAW].jpg"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>The Tyrant Empress is Obsessed with Me [RAW]</h6>
+                    <a href="#"><p>Ch. 100</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Outside of Time.jpeg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Outside of Time</h6>
+                    <a href="#"><p>Ch. 1235</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/My Divine Diary.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>My Divine Diary</h6>
+                    <a href="#"><p>Ch. 529</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nontampilanrekomendasi" id="rekomen-genre4">
+              <div class="row">
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/A Billion Stars Can't Amount to You.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>A Billion Stars Can't Amount to You</h6>
+                    <a href="#"><p>Ch. 1075 - END</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Bringing the Nation's Husband Home.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Bringing the Nation's Husband Home</h6>
+                    <a href="#"><p>Ch. 973 - END</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/Divine Doctor_ Daughter of the First Wife.jpg"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>Divine Doctor_ Daughter of the First Wife</h6>
+                    <a href="#"><p>Ch. 1482</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Medical Princess.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Medical Princess</h6>
+                    <a href="#"><p>Ch. 1051</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/Rebirth to a Military Marriage_ Good Morning Chief.jpg"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>Rebirth to a Military Marriage_ Good Morning Chief</h6>
+                    <a href="#"><p>Ch. 720</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nontampilanrekomendasi" id="rekomen-genre5">
+              <div class="row">
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Pick Me Up!.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Pick Me Up!</h6>
+                    <a href="#"><p>Ch. 157</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/Immortal and Martial Dual Cultivation.jpg"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>Immortal and Martial Dual Cultivation</h6>
+                    <a href="#"><p>Ch. 2381 - END</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.8
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Leveling with the Gods.jpeg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Leveling with the Gods</h6>
+                    <a href="#"><p>Ch. 473</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>8.7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img src="images/Damn Reincarnation.jpg" />
+                  </div>
+                  <div class="container2">
+                    <h6>Damn Reincarnation</h6>
+                    <a href="#"><p>Ch. 250</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="container1">
+                    <img
+                      src="images/Surviving the Game as a Barbarian [RAW].jpg"
+                    />
+                  </div>
+                  <div class="container2">
+                    <h6>Surviving the Game as a Barbarian [RAW]</h6>
+                    <a href="#"><p>Ch. 378</p></a>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article>
+        <!-- box info tl -->
+        <div class="container" id="tl-info">
+          <div class="isi">
+            <h6><b>Translations Info</b></h6>
+          </div>
+          <p>
+            <b>MTL</b> = Mesin Translate yaitu translate menggunakan google
+            terjemahan tanpa edit.
+          </p>
+          <p>
+            <b>RAW MTL</b> = Di translate langsung dari RAW menggunakan Mesin
+            Translate
+          </p>
+        </div>
+
+        <!-- kotak pencarian -->
+        <div class="container" id="search-box">
+          <div class="kotak-pencarian">
+            <h6><b>Cari Cepat</b></h6>
+            <hr />
+          </div>
+          <div class="tempatdropdown1">
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genre
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <table>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault1"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault1">
+                          Action
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault2"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault2">
+                          Adventure
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault3"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault3">
+                          Comedy
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault4"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault4">
+                          Drama
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault5"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault5">
+                          Ecchi
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault6"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault6">
+                          Fantasy
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault7"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault7">
+                          Gender Bender
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault88"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault8">
+                          Harem
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault9"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault9">
+                          Historical
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault10"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault10">
+                          Horror
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault11"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault11">
+                          Isekai
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault12"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault12">
+                          Josei
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault13"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault13">
+                          Martial Arts
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault14"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault14">
+                          Mature
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault15"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault15">
+                          Mecha
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault16"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault16">
+                          Mystery
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault17"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault17">
+                          Psychological
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault18"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault18">
+                          Romance
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault19"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault19">
+                          School Life
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault20"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault20">
+                          Sci-fi
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault21"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault21">
+                          Seinen
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault22"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault22">
+                          Shoujo
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault23"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault23">
+                          Shoujo Ai
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault24"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault24">
+                          Shounen
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault25"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault25">
+                          Shounen Ai
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault26"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault26">
+                          Slice of Life
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault27"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault27">
+                          Sports
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault28"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault28">
+                          Supernatural
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault29"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault29">
+                          Tragedy
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault30"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault30">
+                          Wuxia
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault31"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault31">
+                          Xianxia
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault32"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault32">
+                          Xuanhuan
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault33"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault33">
+                          Yaoi
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault34"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefault34">
+                          Yuri
+                        </label>
+                      </td>
+                    </tr>
+                  </table>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tempatdropdown2">
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tipe
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <table>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefaultA"
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefaultA">
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefaultB"
+                          checked
+                        />
+                        <label class="checkbox-inline" for="flexCheckDefaultB">
+                          Novel
+                        </label>
+                      </td>
+                    </tr>
+                  </table>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tempatdropdown3">
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Status
+              </a>
+              <ul class="dropdown-menu">
+                <div class="form-check">
+                  <input
+                    checked
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    All
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Ongoing
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault3"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Completed
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault4"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault4">
+                    Hiatus
+                  </label>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="tempatdropdown4">
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Urutkan
+              </a>
+              <ul class="dropdown-menu">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Default
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault6"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault6">
+                    A-Z
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault7"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault7">
+                    Z-A
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault8"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault8">
+                    Baru diperbarui
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault9"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault9">
+                    Baru ditambahkan
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault10"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault10">
+                    Terpopuler
+                  </label>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div id="search-konten">
+            <button><i class="fa fa-search"></i>Search</button>
+          </div>
+        </div>
+
+        <div class="container" id="bacanovelpopuler-mbs">
+          <div id="rekomendasi-mbs">
+            <div class="containerjudul" id="judul-rekomendasi-mbs">
+              <b>Baca Novel Terpopuler</b>
+              <hr />
+            </div>
+            <div class="container-rekomen" id="isi-rekomendasi-mbs">
+              <div class="row" id="tagline-mbs">
+                <div class="col">
+                  <button
+                    class="mbs-button active"
+                    onclick="ubahTampilanMBS(this, 'mingguan')"
+                  >
+                    Mingguan
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    class="mbs-button"
+                    onclick="ubahTampilanMBS(this, 'bulanan')"
+                  >
+                    Bulanan
+                  </button>
+                </div>
+                <div class="col">
+                  <button
+                    class="mbs-button"
+                    onclick="ubahTampilanMBS(this, 'semua')"
+                  >
+                    Semua
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tampilanrekomendasi-mbs" id="mingguan">
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">1</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Martial God Asura.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Martial God Asura</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Drama, Fantasy, Harem,
+                      Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">2</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Nine Star Hegemon Body Art.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Nine Star Hegemon Body Art</h6>
+                    <p>
+                      <b>Genres:</b>
+                      Martial Arts, Xuanhuan
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>8.2
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">3</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Alchemy Emperor of the Divine Dao.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Alchemy Emperor of the Divine Dao</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Drama, Fantasy, Harem,
+                      Martial Arts, Xuanhuan
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">4</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img
+                      src="images/Reincarnation Of The Strongest Sword God.png"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Reincarnation Of The Strongest Sword God</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Martial Arts,
+                      Sci-fi
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">5</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Overgeared.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Overgeared</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Harem, Sci-fi
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>9.0
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">6</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Chaotic Sword God.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Chaotic Sword God</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Drama, Fantasy, Harem,
+                      Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.6
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">7</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Swordmaster's Youngest Son.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Swordmaster's Youngest Son</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.2
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">8</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img
+                      src="images/Immortal and Martial Dual Cultivation.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Immortal and Martial Dual Cultivation</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Martial Arts,
+                      Shounen
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.8
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">9</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Against the Gods.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Against the Gods</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Ecchi, Fantasy, Harem,
+                      Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.9
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">10</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Emperor's Domination.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Emperor's Domination</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Harem, Martial
+                      Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.5
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nontampilanrekomendasi-mbs" id="bulanan">
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">1</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Martial God Asura.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Martial God Asura</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Drama, Fantasy, Harem,
+                      Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">2</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Nine Star Hegemon Body Art.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Nine Star Hegemon Body Art</h6>
+                    <p><b>Genres:</b> Action, Harem, Martial Arts, Xuanhuan</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>8.2
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">3</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Alchemy Emperor of the Divine Dao.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Alchemy Emperor of the Divine Dao</h6>
+                    <p>
+                      <b>Genres:</b> Action, Fantasy, Harem, Martial Arts,
+                      Xuanhuan
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">4</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Against the Gods.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Against the Gods</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Ecchi, Fantasy, Harem,
+                      Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.9
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">5</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img
+                      src="images/Reincarnation Of The Strongest Sword God.png"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Reincarnation Of The Strongest Sword God</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Drama, Fantasy, Martial
+                      Arts, Sci-fi
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">6</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Swordmaster's Youngest Son.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Swordmaster's Youngest Son</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Martial Arts,
+                      Romance
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>8.2
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">7</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/The Great Ruler.png" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>The Great Ruler</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Martial Arts,
+                      Romance
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">8</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Overgeared.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Overgeared</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Harem, Sci-fi
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>9
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">9</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/My Disciples Are All Villains.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>My Disciples Are All Villains</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Comedy, Drama, Fantasy,
+                      Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">10</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Emperor's Domination.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Emperor's Domination</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Harem, Martial
+                      Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full"></span>8.5
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nontampilanrekomendasi-mbs" id="semua">
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">1</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Martial God Asura.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Martial God Asura</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Drama, Fantasy, Harem,
+                      Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">2</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img
+                      src="images/The Heavenly Demon Can't Live a Normal Life [RAW].png"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>The Heavenly Demon Can't Live a Normal Life [RAW]</h6>
+                    <p><b>Genres:</b> Action, Fantasy</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">3</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img
+                      src="images/Reincarnation Of The Strongest Sword God.png"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Reincarnation Of The Strongest Sword God</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Martial Arts,
+                      Sci-fi
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">4</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Nine Star Hegemon Body Art.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Nine Star Hegemon Body Art</h6>
+                    <p><b>Genres:</b> Action, Harem, Martial Arts, Xuanhuan</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>8.2
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">5</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Alchemy Emperor of the Divine Dao.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Alchemy Emperor of the Divine Dao</h6>
+                    <p>
+                      <b>Genres:</b> Action, Fantasy, Harem, Martial Arts,
+                      Xuanhuan
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">6</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Overgeared.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Overgeared</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Harem, Sci-fi
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>9.0
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">7</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Against the Gods.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Against the Gods</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Ecchi, Fantasy, Harem,
+                      Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>8.9
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">8</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Swordmaster's Youngest Son.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Swordmaster's Youngest Son</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Martial Arts
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>8.2
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">9</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img
+                      src="images/The Return of the Iron-blood Sword Hound.jpeg"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>The Return of the Iron-blood Sword Hound</h6>
+                    <p>
+                      <b>Genres:</b> Action, Adventure, Fantasy, Romance, School
+                      Life
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-1">
+                  <div class="nomor">10</div>
+                </div>
+                <div class="col-3">
+                  <div class="container1">
+                    <img src="images/Renegade Immortal.jpg" />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="container2">
+                    <h6>Renegade Immortal</h6>
+                    <p><b>Genres:</b> Action, Mature, Tragedi, Xianxia</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span>
+                    <span class="fa fa-star"></span>7
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="genres-novelonline">
+          <div class="containerjudul" id="judul-genre">
+            <b>Genres Novel Online</b>
+          </div>
+          <div class="isi-genre">
+            <div class="row">
+              <div class="col">
+                <a href="#">Action</a>
+                <br />
+                <a href="#">Drama</a>
+                <br />
+                <a href="#">Gender Bender</a><br />
+                <a href="#">Josei</a><br />
+                <a href="#">Mecha</a><br />
+                <a href="#">Romance</a><br />
+                <a href="#">Seinen</a><br />
+                <a href="#">Shounen</a><br />
+                <a href="#">Sports</a><br />
+                <a href="#">Wuxia</a><br />
+                <a href="#">Yaoi</a>
+              </div>
+              <div class="col">
+                <a href="#">Adventure</a><br />
+                <a href="#">Ecchi</a><br />
+                <a href="#">Harem</a><br />
+                <a href="#">Horor</a><br />
+                <a href="#">Martial Arts</a><br />
+                <a href="#">Mystery</a><br />
+                <a href="#">School Life</a><br />
+                <a href="#">Shoujo</a><br />
+                <a href="#">Shounen Ai</a><br />
+                <a href="#">Supernatural</a><br />
+                <a href="#">Xianxia</a><br />
+                <a href="#">Yuri</a>
+              </div>
+              <div class="col" id="colakhir">
+                <a href="#">Comedy</a><br />
+                <a href="#">Fantasy</a><br />
+                <a href="#">Historical</a><br />
+                <a href="#">Isekai</a><br />
+                <a href="#">Mature</a><br />
+                <a href="#">Psychological</a><br />
+                <a href="#">Sci-fi</a><br />
+                <a href="#">Shoujo Ai</a><br />
+                <a href="#">Slice of Life</a><br />
+                <a href="#">Tragedy</a><br />
+                <a href="#">Xuanhuan</a><br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="novel-serialterbaru">
+          <div class="containerjudul" id="judul-genre">
+            <b>Baca Novel Serial Terbaru</b>
+          </div>
+          <div class="container-isi">
+            <div class="row">
+              <div class="col-3">
+                <a href="#">
+                  <img src="images/The Youngest Son of Sunyang.jpg" alt="" />
+                </a>
+              </div>
+              <div class="col-9">
+                <a href="#"><b>The Youngest Son of Sunyang</b></a>
+                <p><b>Genres:</b> Drama,Fantasy, Mature, Psychological</p>
+                <span>2017</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <a href="#">
+                  <img
+                    src="images/The Reincarnate Became a Professor at the Academy [RAW].jpeg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-9">
+                <a href="#"
+                  ><b
+                    >The Reincarnate Became a Professor at the Academy [RAW]</b
+                  ></a
+                >
+                <p>
+                  <b>Genres:</b> Action,Drama,Fantasy, Harem, Martial Arts,
+                  Xuanhuan
+                </p>
+                <span>2023</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <a href="#">
+                  <img
+                    src="images/The Academy's Only Monster Summoner [RAW].webp"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-9">
+                <a href="#"><b>The Academy's Only Monster Summoner [RAW]</b></a>
+                <p><b>Genres:</b> Action, Fantasy, Harem, Supernatural</p>
+                <span>2022</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <a href="#">
+                  <img src="images/Everlasting Dragon Emperor.jpg" alt="" />
+                </a>
+              </div>
+              <div class="col-9">
+                <a href="#"><b>Everlasting Dragon Emperor</b></a>
+                <p>
+                  <b>Genres:</b> Action, Adventure, Fantasy, Harem, Xuanhuan
+                </p>
+                <span>2017</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <a href="#">
+                  <img
+                    src="images/The Teachers Who Abandoned Me Are Now Obsessed With Me [RAW].jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-9">
+                <a href="#"
+                  ><b
+                    >The Teachers Who Abandoned Me Are Now Obsessed With Me
+                    [RAW]</b
+                  ></a
+                >
+                <p><b>Genres:</b> Drama, Fantasy, Harem, Romance</p>
+                <span>2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" id="terakhirbaca">
+          <div class="containerjudul" id="judul-genre">
+            <b>Terakhir Dibaca</b>
+          </div>
+          <div class="isi-lastseen">
+            <div class="row">
+              <a href="#">I Became The Tyrant of a Defense Game Chapter 549</a>
+            </div>
+            <div class="row">
+              <a href="#">Summoning The Holy Sword Chapter 1381 - END</a>
+            </div>
+            <div class="row">
+              <a href="#">Assassin's Chronicle Chapter 1</a>
+            </div>
+            <div class="row">
+              <a href="#">I Became The Tyrant of a Defense Game Chapter 560</a>
+            </div>
+            <div class="row">
+              <a href="#">I Became The Tyrant of a Defense Game Chapter 559</a>
+            </div>
+            <div class="row">
+              <a href="#">I Became The Tyrant of a Defense Game Chapter 558</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="wadah">
+        <div class="navigasi">
+          <a href="#">Home</a>
+          <a href="#">Bookmark</a>
+          <a href="#">AZ Lists</a>
+          <a href="#">Terms of Usage</a>
+          <a href="#">Contact Us</a>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Morenovel</a>
+        </div>
+        <div class="carikata">
+          <div class="container1">
+            <span id="f1"><b>A-Z LIST</b></span>
+            <span id="f2">Cari series dari A sampai Z</span>
+          </div>
+          <div class="container2">
+            <button class="btn">#</button>
+            <button class="btn">0-9</button>
+            <button class="btn">A</button>
+            <button class="btn">B</button>
+            <button class="btn">C</button>
+            <button class="btn">D</button>
+            <button class="btn">E</button>
+            <button class="btn">F</button>
+            <button class="btn">G</button>
+            <button class="btn">H</button>
+            <button class="btn">I</button>
+            <button class="btn">J</button>
+            <button class="btn">K</button>
+            <button class="btn">L</button>
+            <button class="btn">M</button>
+            <button class="btn">N</button>
+            <button class="btn">O</button>
+            <button class="btn">P</button>
+            <button class="btn">Q</button>
+            <button class="btn">R</button>
+            <button class="btn">S</button>
+            <button class="btn">T</button>
+            <button class="btn">U</button>
+            <button class="btn">V</button>
+            <button class="btn">W</button>
+            <button class="btn">X</button>
+            <button class="btn">Y</button>
+            <button class="btn">Z</button>
+          </div>
+          <div class="keteranganfooter">
+            <p>
+              Copyright © 2024 BacaLightNovel. All Rights Reserved <br />
+              Disclaimer: Situs BacaLightNovel tidak menyimpan file apa pun di
+              server. Semua konten disediakan oleh pihak ketiga yang tidak
+              berafiliasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
